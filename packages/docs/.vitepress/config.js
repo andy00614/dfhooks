@@ -9,11 +9,12 @@ module.exports = {
   alias: {
     // 为了能在demo中正确的使用  import { X } from 'df-hook-document'
     [`df-hook-document`]: resolve('./src'),
+    [`@`]: resolve('./packages'),
   },
   base,
   themeConfig: {
     // logo: '../logo.svg',
-    nav: [{ text: 'demo', link: '/math' }],
+    nav: [{ text: 'demo', link: '/math' }],   
     lang: 'zh-CN',
     locales: {
       '/': {

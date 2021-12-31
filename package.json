@@ -14,7 +14,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "dev": "vitepress-fc dev --root=docs --host",
+    "dev": "vitepress-fc dev --root=packages/docs --host",
     "build": "vite build && yarn type",
     "type": "vue-tsc --declaration --emitDeclarationOnly",
     "test": "jest",
