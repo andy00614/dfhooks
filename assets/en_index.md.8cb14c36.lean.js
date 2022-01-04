@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a as o}from"./app.df3ed544.js";const n={components:{}},h='{"title":"","description":"","frontmatter":{},"relativePath":"en/index.md","lastUpdated":1641294065793}',s=o("p",null,"Write home page here.",-1),r=[s];function c(d,p,_,i,l,f){return a(),t("div",null,r)}var u=e(n,[["render",c]]);export{h as __pageData,u as default};
