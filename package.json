@@ -4,12 +4,6 @@
   "description": "",
   "main": "./dist/df-hooks.umd.js",
   "module": "./dist/df-hooks.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/df-hooks.es.js",
-      "require": "./dist/df-hooks.umd.js"
-    }
-  },
   "types": "dist/packages/core/index.d.ts",
   "author": "andy0614",
   "license": "MIT",
