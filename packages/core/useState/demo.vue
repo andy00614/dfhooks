@@ -6,12 +6,13 @@
 </template>
 
 <script lang="ts">
-import { useState } from './index';
+import { useState } from '../../../dist/df-hooks.es';
 
 export default {
   setup() {
     const [count, setCount] = useState(0);
     function onClick() {
+      console.log('hahha', count.value);
       setCount(++count.value);
     }
 

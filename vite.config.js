@@ -1,9 +1,6 @@
 // yarn build 用到的vite配置
 
-import vue from '@vitejs/plugin-vue';
-import vueJsx from '@vitejs/plugin-vue-jsx';
 import { resolve } from 'path';
-import typescript2 from 'rollup-plugin-typescript2';
 
 /**
  * @type {import('vite').UserConfig}
@@ -17,20 +14,20 @@ export default {
     // vue(),
     // vueJsx(),
     {
-      ...typescript2(),
+      // ...typescript2(),
       // apply: 'build',
     },
   ],
   build: {
     minify: true,
     lib: {
-      entry: resolve('./packages/core'),
+      entry: resolve('./packages/core/index.ts'),
       name: 'df-hooks',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: ['vue', 'vue-demi'],
+      external: ['vue-demi', 'vue'],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
