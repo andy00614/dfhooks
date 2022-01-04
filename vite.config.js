@@ -16,8 +16,8 @@ export default {
   build: {
     minify: true,
     lib: {
-      entry: resolve('./src/index.ts'),
-      name: 'df-hook-document',
+      entry: resolve('./packages/core'),
+      name: 'df-hooks',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -27,7 +27,7 @@ export default {
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
-          vue: 'Vue',
+          vue: 'Dfhooks',
         },
       },
     },
