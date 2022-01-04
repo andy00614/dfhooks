@@ -6,8 +6,8 @@
   "module": "./dist/df-hooks.es.js",
   "exports": {
     ".": {
-      "import": "./dist/df-hook.es.js",
-      "require": "./dist/df-hook.umd.js"
+      "import": "./dist/df-hooks.es.js",
+      "require": "./dist/df-hooks.umd.js"
     }
   },
   "types": "dist/packages/core/index.d.ts",
