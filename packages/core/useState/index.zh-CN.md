@@ -4,7 +4,7 @@ map:
   path: /components/button
 ---
 
-# Button2
+# Button3
 
 这是一个简单的按钮。
 

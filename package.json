@@ -2,12 +2,12 @@
   "name": "df-hooks",
   "version": "0.0.2",
   "description": "",
-  "main": "./dist/df-hook-document.umd.js",
-  "module": "./dist/df-hook-document.es.js",
+  "main": "./dist/df-hooks.umd.js",
+  "module": "./dist/df-hooks.es.js",
   "exports": {
     ".": {
-      "import": "./dist/df-hook-document.es.js",
-      "require": "./dist/df-hook-document.umd.js"
+      "import": "./dist/df-hook.es.js",
+      "require": "./dist/df-hook.umd.js"
     }
   },
   "types": "dist/packages/core/index.d.ts",
