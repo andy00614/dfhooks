@@ -22,7 +22,7 @@ export default {
     },
   ],
   build: {
-    minify: false,
+    minify: true,
     lib: {
       entry: resolve('./packages/core'),
       name: 'df-hooks',
@@ -30,12 +30,12 @@ export default {
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      // external: ['vue'],
+      external: ['vue', 'vue-demi'],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
-          vue: 'Dfhooks',
+          vue: 'Vue',
         },
       },
     },
