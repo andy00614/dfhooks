@@ -1,6 +1,6 @@
 {
   "name": "df-hooks",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "./dist/df-hooks.umd.js",
   "module": "./dist/df-hooks.es.js",
