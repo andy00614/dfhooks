@@ -7,6 +7,9 @@
   "types": "dist/packages/core/index.d.ts",
   "author": "andy0614",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vitepress-fc dev --root=packages/docs --host",
     "build": "vite build",
