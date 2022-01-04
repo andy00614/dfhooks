@@ -15,7 +15,7 @@ describe('useStep', () => {
     next();
     expect(currentStep.value).toBe('stepD');
     back();
-    expect(currentStep.value).toBe('stepC');
+    expect(currentStep.value).toBe('stepCb');
     back();
     back();
     expect(currentStep.value).toBe('stepA');
