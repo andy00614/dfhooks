@@ -12,9 +12,9 @@
   ],
   "scripts": {
     "dev": "vitepress-fc dev --root=packages/docs --host",
-    "build": "vite build",
+    "build": "vite build && npm run type",
     "build-hook": "tsc",
-    "type": "vue-tsc --declaration --emitDeclarationOnly",
+    "type": "tsc --emitDeclarationOnly",
     "test": "jest",
     "docs-build": "rimraf docs/dist && cross-env NODE_ENV=production vitepress-fc build --root=docs",
     "docs-serve": "cross-env NODE_ENV=production vitepress-fc serve --root=docs",
