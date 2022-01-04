@@ -10,8 +10,8 @@
       "require": "./dist/df-hook-document.umd.js"
     }
   },
-  "types": "dist/src/index.d.ts",
-  "author": "",
+  "types": "dist/packages/core/index.d.ts",
+  "author": "andy0614",
   "license": "MIT",
   "scripts": {
     "dev": "vitepress-fc dev --root=packages/docs --host",
