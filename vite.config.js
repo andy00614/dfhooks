@@ -3,6 +3,7 @@
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import { resolve } from 'path';
+import typescript2 from 'rollup-plugin-typescript2';
 
 /**
  * @type {import('vite').UserConfig}
@@ -12,9 +13,16 @@ export default {
     include: [],
     exclude: [],
   },
-  plugins: [vue(), vueJsx()],
+  plugins: [
+    // vue(),
+    // vueJsx(),
+    {
+      ...typescript2(),
+      // apply: 'build',
+    },
+  ],
   build: {
-    minify: true,
+    minify: false,
     lib: {
       entry: resolve('./packages/core'),
       name: 'df-hooks',
