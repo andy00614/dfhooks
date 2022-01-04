@@ -4,9 +4,9 @@ map:
   path: /components/button
 ---
 
-# Button3
+# useState
 
-这是一个简单的按钮。
+和 react 中的 useState 一样
 
 ## 代码演示
 
