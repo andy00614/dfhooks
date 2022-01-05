@@ -1,4 +1,4 @@
-const base = process.env.NODE_ENV === 'production' ? '/df-hook-document' : '';
+const base = process.env.NODE_ENV === 'production' ? '/dfhooks' : '';
 const { resolve } = require('path');
 
 module.exports = {
