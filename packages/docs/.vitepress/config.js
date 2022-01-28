@@ -14,7 +14,7 @@ module.exports = {
   base,
   themeConfig: {
     // logo: '../logo.svg',
-    nav: [{ text: 'demo', link: '/math' }],   
+    nav: [{ text: 'demo', link: '/math' }],
     lang: 'zh-CN',
     locales: {
       '/': {
@@ -26,7 +26,7 @@ module.exports = {
         nav: [{ text: '指南', link: '/' }],
         sidebar: [
           { text: '介绍', link: '/' },
-          { text: 'Button', link: '/components/button/' },
+          { text: 'useState', link: '/hooks/useState/' },
         ],
       },
       '/en/': {

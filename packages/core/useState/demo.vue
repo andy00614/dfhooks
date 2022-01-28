@@ -1,18 +1,21 @@
 <template>
   <div>
     <p>计数值: {{ count }}</p>
-    <button class="button" @click="onClick">按钮</button>
+    <ks-button class="button" @click="onClick">按钮</ks-button>
   </div>
 </template>
 
 <script lang="ts">
-import { useState } from '../../../dist/df-hooks.es';
+import { useState } from './index';
+import { ElButton } from 'element-plus';
 
 export default {
+  components: {
+    KsButton: ElButton,
+  },
   setup() {
     const [count, setCount] = useState(0);
     function onClick() {
-      console.log('hahha', count.value);
       setCount(++count.value);
     }
 

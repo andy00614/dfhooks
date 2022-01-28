@@ -1,7 +1,7 @@
 ---
 map:
   # 映射到docs的路径
-  path: /components/button
+  path: /hooks/useState
 ---
 
 # useState
@@ -26,7 +26,7 @@ import { Button } from 'df-hook-document';
 
 ## Props
 
-| 参数  | 说明 |   类型 |         值 |
-| ----- | ---: | -----: | ---------: |
+| 参数  | 说明 | 类型   | 值         |
+| ----- | ---- | ------ | ---------- |
 | size  | 大小 | string | 例如'16px' |
-| color | 颜色 | string |  例如'red' |
+| color | 颜色 | string | 例如'red'  |
