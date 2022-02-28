@@ -27,6 +27,7 @@ module.exports = {
         sidebar: [
           { text: '介绍', link: '/' },
           { text: 'useState', link: '/hooks/useState/' },
+          { text: 'useStep', link: '/hooks/useStep/' },
         ],
       },
       '/en/': {

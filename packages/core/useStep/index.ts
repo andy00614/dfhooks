@@ -7,10 +7,12 @@ export function useStep(stepEnum: string[]) {
     currentStep.value = stepEnum[index.value];
   };
   const next = () => {
+    if (index.value >= stepEnum.length - 1) return;
     index.value += 1;
     changeCurrentStep();
   };
   const back = () => {
+    if (index.value <= 0) return;
     index.value -= 1;
     changeCurrentStep();
   };
