@@ -28,6 +28,7 @@ module.exports = {
           { text: '介绍', link: '/' },
           { text: 'useState', link: '/hooks/useState/' },
           { text: 'useStep', link: '/hooks/useStep/' },
+          { text: 'useRequest', link: '/hooks/useRequest/' },
         ],
       },
       '/en/': {
