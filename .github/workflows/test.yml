@@ -17,12 +17,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install
-        run: yarn install --frozen-lockfile
+        run: npm install --frozen-lockfile
       - name: Lint
-        run: yarn lint
+        run: npm lint
       - name: ls-lint
-        run: yarn ls-lint
+        run: npm ls-lint
       - name: Test
-        run: yarn test
+        run: npm test
       - name: deploy-doc
-        run: yarn docs-build-deploy
+        run: npm docs-build-deploy

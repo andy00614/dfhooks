@@ -52,7 +52,7 @@ export function useRequest<T extends unknown[], U>(
     request: (...arr: T) => Promise<U>,
     time = 1000,
   ) {
-    let timer: NodeJS.Timer;
+    let timer: number;
     let result: U;
     return {
       async start(...params: T) {
