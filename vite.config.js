@@ -42,4 +42,8 @@ export default {
       },
     },
   },
+  commonjsOptions: {
+    transformMixedEsModules: true,
+    extensions: ['.js', '.ts'],
+  },
 };

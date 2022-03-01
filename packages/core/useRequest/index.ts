@@ -1,6 +1,7 @@
 import { computed, reactive, Ref, ref, watch } from 'vue-demi';
 import { PaginationResult, Params, Request, requestFactor } from './type';
-import { throttle, debounce } from 'lodash-es';
+import debounce from 'lodash/debounce';
+import throttle from 'lodash/throttle';
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function useRequest<T extends unknown[], U>(

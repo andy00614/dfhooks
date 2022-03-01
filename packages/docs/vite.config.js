@@ -8,4 +8,8 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [vueJsx()],
+  commonjsOptions: {
+    transformMixedEsModules: true,
+    extensions: ['.js', '.ts'],
+  },
 });
