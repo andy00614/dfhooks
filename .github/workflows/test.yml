@@ -19,10 +19,10 @@ jobs:
       - name: Install
         run: npm install --frozen-lockfile
       - name: Lint
-        run: npm lint
+        run: npm run lint
       - name: ls-lint
-        run: npm ls-lint
+        run: npm run ls-lint
       - name: Test
-        run: npm test
+        run: npm run test
       - name: deploy-doc
-        run: npm docs-build-deploy
+        run: npm run docs-build-deploy
